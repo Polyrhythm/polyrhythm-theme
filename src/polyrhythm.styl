@@ -1,4 +1,72 @@
 @import 'nib'
 
+// Utility classes
+
 .cf
   clearfix()
+
+.vertical
+  display table-cell
+  vertical-align middle
+
+.inner
+  position relative
+  width 80%
+  max-width 700px
+  margin 0 auto
+
+// Setup
+
+table
+  box-sizing border-box
+  margin 1.6em 0
+  width 100%
+  max-width 100%
+  background-color transparent
+
+  th, td
+    padding 8px
+    line-height 20px
+    text-align left
+    vertical-align top
+    border-top 1px solid #efefef
+
+  th
+    color #000
+
+  caption + thead tr:first-child th,
+  caption + thead tr:first-child td,
+  colgroup + thead tr:first-child th,
+  colgroup + thead tr:first-child td,
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td
+    border-top 0
+
+  tbody + tbody
+    border-top 2px solid #efefef
+
+  table table
+    background-color #fff
+
+  tbody > tr:nth-child(odd) > td,
+  tbody > tr:nth-child(odd) > th
+    background-color #f6f6f6
+
+  &.plain tbody > tr:nth-child(odd) > td,
+  &.plain tbody > tr:nth-child(odd) > th
+    background transparent
+
+iframe
+  display block
+  margin 1.6em 0
+
+// Theme-specific
+.blog-logo
+  text-decoration none
+
+  img
+    display block
+    max-height 100px
+    width auto
+    margin 0 auto
+    line-height 0

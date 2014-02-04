@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.initConfig = {
+  grunt.initConfig({
     stylus: {
       compile: {
         options: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         tasks: ['stylus']
       }
     }
-  };
+  });
 
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
